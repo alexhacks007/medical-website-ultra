@@ -429,10 +429,10 @@ const Home = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {[
-              { name: 'Dr. Sarah Johnson', specialty: 'Cardiovascular Lead', image: '/images/doctors/doctor_2.png', rating: 4.9 },
-              { name: 'Dr. Michael Chen', specialty: 'Neuro-Surgeon', image: '/images/doctors/doctor_1.png', rating: 4.8 },
-              { name: 'Dr. Emily Williams', specialty: 'Genetic Specialist', image: '/images/doctors/doctor_4.png', rating: 5.0 },
-              { name: 'Dr. James Wilson', specialty: 'Bio-Telemetry Lead', image: '/images/doctors/doctor_3.png', rating: 4.7 },
+              { name: 'Dr. Sarah Johnson', specialty: 'Cardiovascular Lead', image: `${import.meta.env.BASE_URL}images/doctors/doctor_2.png`, rating: 4.9 },
+              { name: 'Dr. Michael Chen', specialty: 'Neuro-Surgeon', image: `${import.meta.env.BASE_URL}images/doctors/doctor_1.png`, rating: 4.8 },
+              { name: 'Dr. Emily Williams', specialty: 'Genetic Specialist', image: `${import.meta.env.BASE_URL}images/doctors/doctor_4.png`, rating: 5.0 },
+              { name: 'Dr. James Wilson', specialty: 'Bio-Telemetry Lead', image: `${import.meta.env.BASE_URL}images/doctors/doctor_3.png`, rating: 4.7 },
           ].map((doc, i) => (
                 <div key={i} className="group cursor-pointer">
                     <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-slate-100 relative mb-8">

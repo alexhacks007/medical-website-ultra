@@ -13,9 +13,9 @@ const DoctorCard = ({ doctor }) => {
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
         <img 
-          src={doctor.image || '/images/doctors/doctor_1.png'} 
+          src={doctor.image || `${import.meta.env.BASE_URL}images/doctors/doctor_1.png`} 
           alt={doctor.name} 
-          onError={(e) => { e.target.src = '/images/doctors/doctor_1.png' }}
+          onError={(e) => { e.target.src = `${import.meta.env.BASE_URL}images/doctors/doctor_1.png` }}
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
         />
         <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full flex items-center gap-1.5 text-xs font-bold shadow-sm">

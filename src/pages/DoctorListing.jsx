@@ -15,7 +15,7 @@ const doctorsData = [
     location: 'New York, Medical Center',
     experience: 12,
     fee: 150,
-    image: '/images/doctors/doctor_2.png',
+    image: `${import.meta.env.BASE_URL}images/doctors/doctor_2.png`,
     availability: 'Available Today'
   },
   {
@@ -27,7 +27,7 @@ const doctorsData = [
     location: 'San Francisco, Skin Care',
     experience: 8,
     fee: 120,
-    image: '/images/doctors/doctor_1.png',
+    image: `${import.meta.env.BASE_URL}images/doctors/doctor_1.png`,
     availability: 'Available Tomorrow'
   },
   {
@@ -39,7 +39,7 @@ const doctorsData = [
     location: 'Chicago, Kids Clinic',
     experience: 15,
     fee: 100,
-    image: '/images/doctors/doctor_4.png',
+    image: `${import.meta.env.BASE_URL}images/doctors/doctor_4.png`,
     availability: 'Available Monday'
   },
   {
@@ -51,7 +51,7 @@ const doctorsData = [
     location: 'Boston, Neuro Hub',
     experience: 10,
     fee: 200,
-    image: '/images/doctors/doctor_3.png',
+    image: `${import.meta.env.BASE_URL}images/doctors/doctor_3.png`,
     availability: 'Available Today'
   }
 ]

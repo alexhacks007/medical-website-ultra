@@ -13,10 +13,10 @@ const Booking = () => {
 
     // Mock Doctor Data for lookup
     const doctorsData = [
-        { id: 1, name: 'Dr. Sarah Johnson', specialty: 'Senior Cardiovascular Surgeon', image: '/images/doctors/doctor_2.png' },
-        { id: 2, name: 'Dr. Michael Chen', specialty: 'Dermatologist', image: '/images/doctors/doctor_1.png' },
-        { id: 3, name: 'Dr. Emily Williams', specialty: 'Pediatrician', image: '/images/doctors/doctor_4.png' },
-        { id: 4, name: 'Dr. James Wilson', specialty: 'Neurologist', image: '/images/doctors/doctor_3.png' }
+        { id: 1, name: 'Dr. Sarah Johnson', specialty: 'Senior Cardiovascular Surgeon', image: `${import.meta.env.BASE_URL}images/doctors/doctor_2.png` },
+        { id: 2, name: 'Dr. Michael Chen', specialty: 'Dermatologist', image: `${import.meta.env.BASE_URL}images/doctors/doctor_1.png` },
+        { id: 3, name: 'Dr. Emily Williams', specialty: 'Pediatrician', image: `${import.meta.env.BASE_URL}images/doctors/doctor_4.png` },
+        { id: 4, name: 'Dr. James Wilson', specialty: 'Neurologist', image: `${import.meta.env.BASE_URL}images/doctors/doctor_3.png` }
     ]
 
     useEffect(() => {
@@ -149,10 +149,10 @@ const Booking = () => {
                                             <div className="p-8 bg-slate-50 rounded-[3rem] border border-slate-100 flex flex-col md:flex-row items-center gap-8">
                                                 <div className="w-32 h-32 rounded-[2rem] overflow-hidden shadow-2xl bg-white">
                                                     <img 
-                                                        src={currentBooking.doctorImage || '/images/doctors/doctor_1.png'} 
+                                                        src={currentBooking.doctorImage || `${import.meta.env.BASE_URL}images/doctors/doctor_1.png`} 
                                                         className="w-full h-full object-cover" 
                                                         alt={currentBooking.doctorName} 
-                                                        onError={(e) => { e.target.src = '/images/doctors/doctor_1.png' }}
+                                                        onError={(e) => { e.target.src = `${import.meta.env.BASE_URL}images/doctors/doctor_1.png` }}
                                                     />
                                                 </div>
                                                 <div className="space-y-3 text-center md:text-left">
